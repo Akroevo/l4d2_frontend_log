@@ -2,7 +2,7 @@
 // L4D2 SURVIVOR LOG — app.js
 // ============================================================
 
-const API_BASE = 'http://localhost:3000/api';
+const API_BASE = 'https://l4d2-backend-log.onrender.com/api';
 const MISSIONS_URL = `${API_BASE}/missions`;
 const SURVIVORS_URL = `${API_BASE}/survivors`;
 
