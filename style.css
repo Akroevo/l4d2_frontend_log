@@ -1,7 +1,4 @@
-/* ============================================
-   L4D2 SURVIVOR LOG — STYLESHEET
-   Aesthetic: Post-apocalyptic military horror
-   ============================================ */
+
 
 :root {
   --red:        #b91c1c;
@@ -39,7 +36,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Scanlines */
+
 .scanlines {
   position: fixed;
   inset: 0;
@@ -54,7 +51,7 @@ body {
   z-index: 9999;
 }
 
-/* Blood drip top */
+
 .blood-drip {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -73,7 +70,7 @@ body {
               720px 0 0 var(--red), 900px 0 0 var(--red);
 }
 
-/* ===== HEADER ===== */
+
 .site-header {
   background: var(--bg2);
   border-bottom: 2px solid var(--red-dark);
@@ -148,7 +145,7 @@ body {
   50% { opacity: 0; }
 }
 
-/* Tab Nav */
+
 .tab-nav {
   display: flex;
   padding: 0 24px;
@@ -182,14 +179,14 @@ body {
   background: rgba(185,28,28,0.08);
 }
 
-/* ===== MAIN ===== */
+
 .main-content {
   max-width: 1400px;
   margin: 0 auto;
   padding: 24px 20px;
 }
 
-/* Tab panels */
+
 .tab-panel { display: none; }
 .tab-panel.active { display: block; animation: fadein 0.3s ease; }
 
@@ -209,7 +206,7 @@ body {
   .panel-grid { grid-template-columns: 1fr; }
 }
 
-/* ===== CARD ===== */
+
 .card {
   background: var(--bg2);
   border: 1px solid var(--border);
@@ -244,7 +241,7 @@ body {
   flex: 1;
 }
 
-/* ===== FORM ===== */
+
 .form-card form { padding: 20px; }
 
 .field-group { margin-bottom: 16px; }
@@ -302,7 +299,7 @@ select.field-input option {
 
 textarea.field-input { resize: vertical; min-height: 80px; }
 
-/* Toggle */
+
 .toggle-label {
   display: flex;
   align-items: center;
@@ -339,7 +336,7 @@ textarea.field-input { resize: vertical; min-height: 80px; }
 
 .toggle-text { font-size: 0.75rem; color: var(--text-muted); letter-spacing: 1px; }
 
-/* Form Actions */
+
 .form-actions {
   display: flex;
   gap: 10px;
@@ -355,7 +352,7 @@ textarea.field-input { resize: vertical; min-height: 80px; }
   min-height: 20px;
 }
 
-/* ===== BUTTONS ===== */
+
 .btn {
   font-family: var(--font-head);
   font-weight: 600;
@@ -432,7 +429,7 @@ textarea.field-input { resize: vertical; min-height: 80px; }
 
 .hidden { display: none !important; }
 
-/* ===== ENTRY LIST ===== */
+
 .list-card .card-header { justify-content: space-between; }
 
 .entries-list { padding: 12px 16px; max-height: 600px; overflow-y: auto; }
@@ -579,7 +576,7 @@ textarea.field-input { resize: vertical; min-height: 80px; }
 
 .empty-state .empty-icon { font-size: 2.5rem; display: block; margin-bottom: 12px; }
 
-/* ===== FOOTER ===== */
+
 .site-footer {
   text-align: center;
   padding: 20px;
@@ -592,7 +589,7 @@ textarea.field-input { resize: vertical; min-height: 80px; }
 
 .footer-sep { margin: 0 10px; color: var(--red-dark); }
 
-/* ===== RESPONSIVE ===== */
+
 @media (max-width: 600px) {
   .site-title { font-size: 1.3rem; }
   .field-row { grid-template-columns: 1fr; }
