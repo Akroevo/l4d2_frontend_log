@@ -1,14 +1,10 @@
-// ============================================================
-// L4D2 SURVIVOR LOG — app.js
-// ============================================================
+
 
 const API_BASE = 'https://l4d2-backend-log.onrender.com/api';
 const MISSIONS_URL = `${API_BASE}/missions`;
 const SURVIVORS_URL = `${API_BASE}/survivors`;
 
-// ============================================================
-// TAB NAVIGATION
-// ============================================================
+
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -18,9 +14,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
   });
 });
 
-// ============================================================
-// UTILITIES
-// ============================================================
+
 function formatDate(date) {
   if (!date) return '—';
   return new Date(date).toLocaleString('pt-BR', {
@@ -44,9 +38,7 @@ function statusBadge(status) {
   return `<span class="badge badge-status-${status}">${status.toUpperCase()}</span>`;
 }
 
-// ============================================================
-// MISSIONS — CRUD
-// ============================================================
+
 const missionForm    = document.getElementById('mission-form');
 const missionIdField = document.getElementById('mission-id');
 const missionFormTitle = document.getElementById('mission-form-title');
@@ -180,9 +172,7 @@ missionCancel.addEventListener('click', () => {
 
 document.getElementById('mission-reload').addEventListener('click', loadMissions);
 
-// ============================================================
-// SURVIVORS — CRUD
-// ============================================================
+
 const survivorForm     = document.getElementById('survivor-form');
 const survivorIdField  = document.getElementById('survivor-id');
 const survivorFormTitle = document.getElementById('survivor-form-title');
@@ -317,9 +307,7 @@ survivorCancel.addEventListener('click', () => {
 
 document.getElementById('survivor-reload').addEventListener('click', loadSurvivors);
 
-// ============================================================
-// SERVICE WORKER (PWA)
-// ============================================================
+
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', async () => {
     try {
@@ -331,9 +319,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-// ============================================================
-// INIT
-// ============================================================
 clearMissionForm();
 clearSurvivorForm();
 loadMissions();
